@@ -1,0 +1,3436 @@
+{
+  "schema_version": 1,
+  "papers": [
+    {
+      "title": "mR$^2$AG: Multimodal Retrieval-Reflection-Augmented Generation for Knowledge-Based VQA",
+      "short_name": "mR$^2$AG",
+      "published": "2024-11-22",
+      "category": "智能体与上下文",
+      "tags": [
+        "Agent",
+        "RAG",
+        "检索决策"
+      ],
+      "venue": "TMM 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "Agent 检索决策与证据定位，可借鉴记忆读取策略。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2411.15041",
+      "paper_url": "https://arxiv.org/abs/2411.15041",
+      "id": "arxiv:2411.15041",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "视觉问答中无必要的检索会引入噪声，相关知识也难定位。",
+        "method": "用反思标记决定是否检索，并选择证据段落进行回答。",
+        "value": "把检索时机与证据使用纳入同一模型训练。",
+        "limitation": "主要面向百科知识问答，尚不等同于长期交互记忆。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2411.15041",
+        "https://arxiv.org/pdf/2411.15041"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Before Thinking, Learn to Decide: Proactive Routing for Efficient Visual Reasoning",
+      "short_name": "PRP",
+      "published": "2026-06-29",
+      "category": "智能体与上下文",
+      "tags": [
+        "Agent",
+        "推理路由",
+        "效率"
+      ],
+      "venue": "ECCV 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "关注推理前的预算分配，适合低延迟交互 Agent。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2606.30217",
+      "paper_url": "https://arxiv.org/abs/2606.30217",
+      "id": "arxiv:2606.30217",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "按难度路由问题容易忽略目标模型是否真正能解。",
+        "method": "先预测自身及目标模型可解性，再以强化学习训练路由决策。",
+        "value": "将计算预算投向值得调用强模型的问题。",
+        "limitation": "依赖配对模型的能力监督，模型变化后需重新校准。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2606.30217",
+        "https://arxiv.org/pdf/2606.30217"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Video-Holmes: Can MLLM Think Like Holmes for Complex Video Reasoning?",
+      "short_name": "Video-Holmes",
+      "published": "2025-05-27",
+      "category": "视频理解与推理",
+      "tags": [
+        "视频理解",
+        "评测",
+        "长时记忆"
+      ],
+      "venue": "ECCV 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "用跨片段因果推理检验视频 Agent 的记忆与理解。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2505.21374",
+      "paper_url": "https://arxiv.org/abs/2505.21374",
+      "id": "arxiv:2505.21374",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/Video-Holmes",
+        "weights": null
+      },
+      "summary": {
+        "problem": "视频模型识别局部内容后仍难整合跨片段线索。",
+        "method": "从悬疑电影构造七类推理任务，要求关联证据解释事件。",
+        "value": "将感知与长程因果推理能力分开诊断。",
+        "limitation": "电影选择题具有叙事先验，不能直接代表在线交互能力。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2505.21374",
+        "https://arxiv.org/pdf/2505.21374",
+        "https://github.com/TencentARC/Video-Holmes"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Semantic Generative Tuning for Unified Multimodal Models",
+      "short_name": "Semantic Generative Tuning for Unified Multimodal Models",
+      "published": "2026-05-18",
+      "category": "多模态架构与综述",
+      "tags": [
+        "统一生成理解",
+        "表示学习"
+      ],
+      "venue": "ECCV 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "理解与生成共享语义表示，可为世界模型表示设计提供思路。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2605.18714",
+      "paper_url": "https://arxiv.org/abs/2605.18714",
+      "id": "arxiv:2605.18714",
+      "links": {
+        "project": null,
+        "code": "https://github.com/song2yu/SGT",
+        "weights": null
+      },
+      "summary": {
+        "problem": "统一模型共享结构后，像素生成目标仍难学习抽象语义。",
+        "method": "引入高层语义生成任务，调节统一模型的表示与注意力。",
+        "value": "改善理解能力并增强布局控制，为任务统一提供训练视角。",
+        "limitation": "重点仍是图像任务，未验证时序动力学与闭环控制。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2605.18714",
+        "https://arxiv.org/pdf/2605.18714",
+        "https://github.com/song2yu/SGT"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "ViewWeaver: Geometry-Grounded Generative Rendering for 3D-Aware Image Customization",
+      "short_name": "ViewWeaver",
+      "published": null,
+      "category": "三维生成与重建",
+      "tags": [
+        "三维感知",
+        "图像定制",
+        "待补引言"
+      ],
+      "venue": "SIGGRAPH 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "暂定：三维一致图像定制可供世界模型参考；尚未取得引言，需补读后确认。",
+      "reading_status": "metadata-only",
+      "doi": "10.1145/3799902.3811059",
+      "arxiv_id": null,
+      "paper_url": "https://doi.org/10.1145/3799902.3811059",
+      "id": "doi:10.1145/3799902.3811059",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "该工作关注三维感知的图像定制；此条目前仅完成身份与录用信息核验。",
+        "method": "尚未取得可读引言，不据摘要编写方法分析。",
+        "value": "保留官方收录记录，供后续补齐阅读与比较。",
+        "limitation": "当前优先级仅为主题相关性的暂定判断，不属于完成摘要与引言阅读的导读。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://doi.org/10.1145/3799902.3811059"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Grpo-care: Consistency-aware reinforcement learning for multimodal reasoning",
+      "short_name": "Grpo-care",
+      "published": null,
+      "category": "评测与可靠性",
+      "tags": [
+        "Agent",
+        "强化学习",
+        "规划"
+      ],
+      "venue": "Findings of ACL 2026",
+      "venue_url": "https://aclanthology.org/2026.findings-acl.210",
+      "priority": "P1",
+      "priority_reason": "规划奖励与分布外泛化相关，适合 Agent 后训练。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": null,
+      "paper_url": "https://aclanthology.org/2026.findings-acl.210.pdf",
+      "id": "url:b90fee6285650e9ea555",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/GRPO-CARE",
+        "weights": null
+      },
+      "summary": {
+        "problem": "结果奖励可能鼓励答案正确但推理不可靠的策略。",
+        "method": "以参考模型构造组内似然一致性奖励，并建立分层泛化评测。",
+        "value": "把正确性与推理一致性共同纳入策略优化。",
+        "limitation": "似然一致性是代理信号，不保证推理具有真实因果依据。"
+      },
+      "evidence_urls": [
+        "https://aclanthology.org/2026.findings-acl.210",
+        "https://aclanthology.org/2026.findings-acl.210.pdf",
+        "https://arc.tencent.com/academic",
+        "https://github.com/TencentARC/GRPO-CARE"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "BrushEdit: All-In-One Image Inpainting and Editing",
+      "short_name": "BrushEdit",
+      "published": "2024-12-13",
+      "category": "图像生成与编辑",
+      "tags": [
+        "Agent",
+        "交互控制",
+        "图像编辑"
+      ],
+      "venue": "TPAMI 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "可参考可解释的视觉编辑 Agent 流程，主线相关度次于视频。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2412.10316",
+      "paper_url": "https://arxiv.org/abs/2412.10316",
+      "id": "arxiv:2412.10316",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/BrushEdit",
+        "weights": null
+      },
+      "summary": {
+        "problem": "图像编辑指令难同时转成可靠区域定位和生成条件。",
+        "method": "多模态模型拆解编辑任务，再用掩码与 BrushNet 完成局部重绘。",
+        "value": "支持用户检查与修正中间控制信息。",
+        "limitation": "编辑质量依赖定位和掩码，尚未覆盖实时连续视频交互。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2412.10316",
+        "https://arxiv.org/pdf/2412.10316",
+        "https://github.com/TencentARC/BrushEdit"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Learning to Reason in 4D: Dynamic Spatial Understanding for Vision Language Models",
+      "short_name": "DSR Suite",
+      "published": "2025-12-23",
+      "category": "视频理解与推理",
+      "tags": [
+        "4D",
+        "空间推理",
+        "视频理解"
+      ],
+      "venue": "CVPR 2026",
+      "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_Learning_to_Reason_in_4D_Dynamic_Spatial_Understanding_for_Vision_CVPR_2026_paper.html",
+      "priority": "P1",
+      "priority_reason": "将动态几何压缩成可查询状态，关联世界模型与空间规划。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2512.20557",
+      "paper_url": "https://arxiv.org/abs/2512.20557",
+      "id": "arxiv:2512.20557",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/DSR_Suite",
+        "weights": null
+      },
+      "summary": {
+        "problem": "视频模型缺乏稳定的动态三维状态，直接加入几何又容易干扰语义。",
+        "method": "自动构造空间推理数据，以问题引导的双级模块筛选几何信息。",
+        "value": "改善动态空间推理并控制通用能力损失。",
+        "limitation": "依赖重建伪标注，选择题结果不能替代闭环规划验证。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2512.20557",
+        "https://arxiv.org/pdf/2512.20557",
+        "https://github.com/TencentARC/DSR_Suite",
+        "https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_Learning_to_Reason_in_4D_Dynamic_Spatial_Understanding_for_Vision_CVPR_2026_paper.html"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Sculpt4D: Generating 4D Shapes via Sparse-Attention Diffusion Transformers",
+      "short_name": "Sculpt4D",
+      "published": "2026-04-23",
+      "category": "三维生成与重建",
+      "tags": [
+        "4D",
+        "Avatar",
+        "时序一致性"
+      ],
+      "venue": "CVPR 2026",
+      "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yin_Sculpt4D_Generating_4D_Shapes_via_Sparse-Attention_Diffusion_Transformers_CVPR_2026_paper.html",
+      "priority": "P1",
+      "priority_reason": "时间一致的 4D 表示可用于 Avatar 资产及动态场景。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2604.21592",
+      "paper_url": "https://arxiv.org/abs/2604.21592",
+      "id": "arxiv:2604.21592",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/Sculpt4D",
+        "weights": null
+      },
+      "summary": {
+        "problem": "逐帧生成三维形状容易出现跨时间身份与几何漂移。",
+        "method": "以首帧为锚点，结合时间衰减稀疏注意力扩展三维模型。",
+        "value": "在降低计算量的同时维持动态形状对应关系。",
+        "limitation": "从视频重建动态资产，不直接学习动作条件的环境动力学。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2604.21592",
+        "https://arxiv.org/pdf/2604.21592",
+        "https://github.com/TencentARC/Sculpt4D",
+        "https://openaccess.thecvf.com/content/CVPR2026/html/Yin_Sculpt4D_Generating_4D_Shapes_via_Sparse-Attention_Diffusion_Transformers_CVPR_2026_paper.html"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "MeshWeaver: Sparse-Voxel-Guided Surface Weaving for Autoregressive Mesh Generation",
+      "short_name": "MeshWeaver",
+      "published": "2026-06-03",
+      "category": "三维生成与重建",
+      "tags": [
+        "3D",
+        "网格生成",
+        "资产"
+      ],
+      "venue": "CVPR 2026",
+      "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_MeshWeaver_Sparse-Voxel-Guided_Surface_Weaving_for_Autoregressive_Mesh_Generation_CVPR_2026_paper.html",
+      "priority": "P2",
+      "priority_reason": "可补充世界模型和 Avatar 的几何资产管线。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2606.04688",
+      "paper_url": "https://arxiv.org/abs/2606.04688",
+      "id": "arxiv:2606.04688",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "已知表面几何仍难高效生成结构合理的网格拓扑。",
+        "method": "以稀疏体素条件和分层支架建模，按顶点自回归生成网格。",
+        "value": "改善几何对齐和网格结构生成效率。",
+        "limitation": "依赖输入表面，未涉及动态交互或环境状态转移。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2606.04688",
+        "https://arxiv.org/pdf/2606.04688",
+        "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_MeshWeaver_Sparse-Voxel-Guided_Surface_Weaving_for_Autoregressive_Mesh_Generation_CVPR_2026_paper.html"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "EgoPlan-Bench2: A Benchmark for Multimodal Large Language Model Planning in Real-World Scenarios",
+      "short_name": "EgoPlan-Bench2",
+      "published": "2024-12-05",
+      "category": "智能体与上下文",
+      "tags": [
+        "Agent",
+        "第一视角",
+        "规划",
+        "评测"
+      ],
+      "venue": "IJCV 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P0",
+      "priority_reason": "直接对应基于视频历史和当前状态的 Agent 下一步规划。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2412.04447",
+      "paper_url": "https://arxiv.org/abs/2412.04447",
+      "id": "arxiv:2412.04447",
+      "links": {
+        "project": null,
+        "code": "https://github.com/qiulu66/EgoPlan-Bench2",
+        "weights": null
+      },
+      "summary": {
+        "problem": "静态识别不足以判断真实任务下一步应执行的动作。",
+        "method": "结合目标、任务进度视频和当前观察构造跨场景规划题。",
+        "value": "排除单模态捷径，检验时序进展与物体交互理解。",
+        "limitation": "仍是离线选项决策，不能直接证明闭环执行成功率。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2412.04447",
+        "https://arxiv.org/pdf/2412.04447",
+        "https://github.com/qiulu66/EgoPlan-Bench2"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "EgoPlan-Bench: Benchmarking Multimodal Large Language Models for Human-Level Planning",
+      "short_name": "EgoPlan-Bench",
+      "published": "2023-12-11",
+      "category": "智能体与上下文",
+      "tags": [
+        "Agent",
+        "规划",
+        "视频理解"
+      ],
+      "venue": "IJCV 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "先理解第一视角规划任务设计，再读 EgoPlan-Bench2。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2312.06722",
+      "paper_url": "https://arxiv.org/abs/2312.06722",
+      "id": "arxiv:2312.06722",
+      "links": {
+        "project": null,
+        "code": "https://github.com/ChenYi99/EgoPlan",
+        "weights": null
+      },
+      "summary": {
+        "problem": "日常长任务规划需要结合目标、已完成步骤与当前观察。",
+        "method": "建立第一视角多模态规划评测及相应指令训练数据。",
+        "value": "将视觉状态与动作序列纳入下一步决策。",
+        "limitation": "场景覆盖较集中，离线规划表现不等于真实机器人执行能力。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2312.06722",
+        "https://arxiv.org/pdf/2312.06722",
+        "https://github.com/ChenYi99/EgoPlan"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "MMhops-R1: Multimodal Multi-hop Reasoning",
+      "short_name": "MMhops-R1",
+      "published": "2025-12-15",
+      "category": "智能体与上下文",
+      "tags": [
+        "Agent",
+        "多跳检索",
+        "强化学习"
+      ],
+      "venue": "AAAI 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "动态选择图像、文本检索与停止时机，可借鉴 Agent 规划。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2512.13573",
+      "paper_url": "https://arxiv.org/abs/2512.13573",
+      "id": "arxiv:2512.13573",
+      "links": {
+        "project": null,
+        "code": "https://github.com/taoszhang/MMhops-R1",
+        "weights": null
+      },
+      "summary": {
+        "problem": "固定检索链难解决需要跨图像及外部知识的多跳问题。",
+        "method": "构造桥接和比较任务，以强化学习选择图像检索、文本检索或回答。",
+        "value": "让推理路径与检索深度随问题变化。",
+        "limitation": "知识问答环境较封闭，未验证持续交互中的记忆维护。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2512.13573",
+        "https://arxiv.org/pdf/2512.13573",
+        "https://github.com/taoszhang/MMhops-R1"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "OmniScript: Towards Audio-Visual Script Generation for Long-Form Cinematic Video",
+      "short_name": "OmniScript",
+      "published": "2026-04-13",
+      "category": "视频理解与推理",
+      "tags": [
+        "事件记忆",
+        "多模态",
+        "视频理解"
+      ],
+      "venue": "ECCV 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "结构化视频事件记录可借鉴为 Agent 的情景记忆。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2604.11102",
+      "paper_url": "https://arxiv.org/abs/2604.11102",
+      "id": "arxiv:2604.11102",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/OmniScript",
+        "weights": null
+      },
+      "summary": {
+        "problem": "长视频脚本需要同步描述动作、对白、情绪与事件时间。",
+        "method": "以分层脚本监督和分段奖励训练音视频模型生成带时间戳记录。",
+        "value": "提供可用于检索与叙事分析的结构化视频表示。",
+        "limitation": "任务是视频转脚本，长输出成本及时间标注质量仍构成约束。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2604.11102",
+        "https://arxiv.org/pdf/2604.11102",
+        "https://github.com/TencentARC/OmniScript"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Track4World: Feedforward World-centric Dense 3D Tracking of All Pixels",
+      "short_name": "Track4World",
+      "published": "2026-03-03",
+      "category": "三维生成与重建",
+      "tags": [
+        "4D",
+        "三维跟踪",
+        "世界模型"
+      ],
+      "venue": "ECCV 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "为世界模型提供全局坐标中的动态状态和运动监督。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2603.02573",
+      "paper_url": "https://arxiv.org/abs/2603.02573",
+      "id": "arxiv:2603.02573",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/Track4World",
+        "weights": null
+      },
+      "summary": {
+        "problem": "稀疏首帧跟踪无法覆盖后续新像素，逐点稠密跟踪又昂贵。",
+        "method": "预测任意帧对的二维与三维场景流，以稀疏相关更新恢复稠密轨迹。",
+        "value": "将单目视频转为世界坐标中的全像素动态表示。",
+        "limitation": "依赖整段视频的全局上下文，在线因果处理仍需额外设计。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2603.02573",
+        "https://arxiv.org/pdf/2603.02573",
+        "https://github.com/TencentARC/Track4World"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "OREO: Fidelity Alignment in 3D Generation via On-the-fly Rendering-Editing Optimization",
+      "short_name": "OREO",
+      "published": "2026-09-24",
+      "category": "三维生成与重建",
+      "tags": [
+        "3D",
+        "后训练",
+        "蒸馏"
+      ],
+      "venue": "ECCV 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "可参考生成模型自采样后训练，但主题偏三维资产外观。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2609.29788",
+      "paper_url": "https://arxiv.org/abs/2609.29788",
+      "id": "arxiv:2609.29788",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "三维数据外观多样性不足，生成资产缺少细节和真实感。",
+        "method": "循环渲染当前模型输出，以保结构图像编辑构造正样本并对比蒸馏。",
+        "value": "利用二维先验动态改善三维生成器外观。",
+        "limitation": "编辑伪目标仍可能引入偏差，主要验证静态资产视觉质量。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2609.29788",
+        "https://arxiv.org/pdf/2609.29788"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Pixal3D: Pixel-Aligned 3D Generation from Images",
+      "short_name": "Pixal3D",
+      "published": "2026-05-11",
+      "category": "三维生成与重建",
+      "tags": [
+        "3D",
+        "几何一致性",
+        "条件生成"
+      ],
+      "venue": "SIGGRAPH 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "显式像素与三维对应可借鉴到可控世界模型的状态表示。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2605.10922",
+      "paper_url": "https://arxiv.org/abs/2605.10922",
+      "id": "arxiv:2605.10922",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/Pixal3D",
+        "weights": null
+      },
+      "summary": {
+        "problem": "图像条件三维生成的隐式对应容易丢失细节并偏离输入。",
+        "method": "把多尺度像素特征沿射线反投影到体素空间，显式约束生成。",
+        "value": "统一单视图与多视图条件，并支持分对象场景组合。",
+        "limitation": "不可见部分仍依赖生成先验，未处理动态场景的因果演化。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2605.10922",
+        "https://arxiv.org/pdf/2605.10922",
+        "https://github.com/TencentARC/Pixal3D"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "GenCompositor: Generative Video Compositing with Diffusion Transformer",
+      "short_name": "GenCompositor",
+      "published": "2025-09-02",
+      "category": "视频生成基础",
+      "tags": [
+        "视频合成",
+        "视频生成",
+        "运动控制"
+      ],
+      "venue": "ICLR 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "直接关联视频可控性、主体保持及对象与背景交互。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2509.02460",
+      "paper_url": "https://arxiv.org/abs/2509.02460",
+      "id": "arxiv:2509.02460",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/GenCompositor",
+        "weights": null
+      },
+      "summary": {
+        "problem": "视频合成需同时保持背景、前景身份运动和用户指定布局。",
+        "method": "以背景保留分支、全注意力融合和扩展旋转位置编码注入动态前景。",
+        "value": "支持按轨迹与尺度组合视频，减少人工合成步骤。",
+        "limitation": "依赖前景素材和控制条件，视觉协调不代表物理正确性。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2509.02460",
+        "https://arxiv.org/pdf/2509.02460",
+        "https://github.com/TencentARC/GenCompositor"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "ToonComposer: Streamlining Cartoon Production with Generative Post-Keyframing",
+      "short_name": "ToonComposer",
+      "published": "2025-08-14",
+      "category": "视频生成基础",
+      "tags": [
+        "动画",
+        "稀疏控制",
+        "视频生成"
+      ],
+      "venue": "ICLR 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "关注稀疏控制与时序先验保护，可借鉴 Avatar 动画生成。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2508.10881",
+      "paper_url": "https://arxiv.org/abs/2508.10881",
+      "id": "arxiv:2508.10881",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/ToonComposer",
+        "weights": null
+      },
+      "summary": {
+        "problem": "分开补帧与上色容易累积误差，密集草图又增加人工负担。",
+        "method": "统一关键帧后生成，以稀疏草图注入和空间低秩适配保留运动先验。",
+        "value": "少量草图与彩色参考即可控制动画及局部运动。",
+        "limitation": "面向卡通域和片段生产，尚不直接满足在线低延迟交互。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2508.10881",
+        "https://arxiv.org/pdf/2508.10881",
+        "https://github.com/TencentARC/ToonComposer"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "IC-Custom: Diverse Image Customization via In-Context Learning",
+      "short_name": "IC-Custom",
+      "published": "2025-07-02",
+      "category": "图像生成与编辑",
+      "tags": [
+        "主体一致性",
+        "图像生成",
+        "条件控制"
+      ],
+      "venue": "ICLR 2026",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "主体身份控制可作为 Avatar 外观定制的补充阅读。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2507.01926",
+      "paper_url": "https://arxiv.org/abs/2507.01926",
+      "id": "arxiv:2507.01926",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/IC-Custom",
+        "weights": null
+      },
+      "summary": {
+        "problem": "图像定制常将指定区域编辑和自由生成分开，难统一身份控制。",
+        "method": "拼接参考与目标图像，以任务标记和边界位置编码区分条件及掩码。",
+        "value": "一个框架兼容不同位置约束，并增强身份保持。",
+        "limitation": "主要验证静态图像，时间维度的身份与动作一致性尚未覆盖。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2507.01926",
+        "https://arxiv.org/pdf/2507.01926",
+        "https://github.com/TencentARC/IC-Custom"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Rolling Forcing: Autoregressive Long Video Diffusion in Real Time",
+      "short_name": "Rolling Forcing",
+      "published": "2025-09-29",
+      "category": "交互长视频",
+      "tags": [
+        "世界模型",
+        "实时交互",
+        "视频生成",
+        "长时一致性"
+      ],
+      "venue": "ICLR 2026",
+      "venue_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/935151cc6cb5d8b6816133b75233775a-Abstract-Conference.html",
+      "priority": "P0",
+      "priority_reason": "直接研究实时长视频的误差累积与长期一致性，是主线必读。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2509.25161",
+      "paper_url": "https://arxiv.org/abs/2509.25161",
+      "id": "arxiv:2509.25161",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/RollingForcing",
+        "weights": null
+      },
+      "summary": {
+        "problem": "严格逐帧自回归会不断放大历史误差，远端关键帧规划又阻碍流式输出。",
+        "method": "滚动窗口联合去噪，以初始帧缓存作锚点并在自生成历史上蒸馏。",
+        "value": "兼顾流式输出与多分钟视频一致性。",
+        "limitation": "窗口内放松因果约束，吞吐提升仍需结合首帧延迟和交互条件评估。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2509.25161",
+        "https://arxiv.org/pdf/2509.25161",
+        "https://github.com/TencentARC/RollingForcing",
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/935151cc6cb5d8b6816133b75233775a-Abstract-Conference.html"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "TimeLens: Rethinking Video Temporal Grounding with Multimodal LLMs",
+      "short_name": "TimeLens",
+      "published": "2025-12-16",
+      "category": "视频理解与推理",
+      "tags": [
+        "时间定位",
+        "视频理解",
+        "评测"
+      ],
+      "venue": "CVPR 2026",
+      "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_TimeLens_Rethinking_Video_Temporal_Grounding_with_Multimodal_LLMs_CVPR_2026_paper.html",
+      "priority": "P1",
+      "priority_reason": "事件时间定位是视频 Agent 记忆检索及生成评测的基础。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2512.14698",
+      "paper_url": "https://arxiv.org/abs/2512.14698",
+      "id": "arxiv:2512.14698",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/TimeLens",
+        "weights": null
+      },
+      "summary": {
+        "problem": "时间定位基准中的模糊查询与错误时间戳会误导模型排名。",
+        "method": "重标评测和训练集，比较时间编码、无思考强化学习及采样策略。",
+        "value": "建立更可靠的时间感知训练与评估基线。",
+        "limitation": "针对事件定位，不能直接推断复杂因果规划或长期记忆能力。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2512.14698",
+        "https://arxiv.org/pdf/2512.14698",
+        "https://github.com/TencentARC/TimeLens",
+        "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_TimeLens_Rethinking_Video_Temporal_Grounding_with_Multimodal_LLMs_CVPR_2026_paper.html"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "AudioStory: Generating Long-Form Narrative Audio with Large Language Models",
+      "short_name": "AudioStory",
+      "published": "2025-08-27",
+      "category": "语音与音频",
+      "tags": [
+        "叙事规划",
+        "长时一致性",
+        "音频生成"
+      ],
+      "venue": "CVPR 2026",
+      "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Guo_AudioStory_Generating_Long-Form_Narrative_Audio_with_Large_Language_Models_CVPR_2026_paper.html",
+      "priority": "P1",
+      "priority_reason": "分层事件规划及跨段状态传递可迁移到长视频和 Avatar 音频。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2508.20088",
+      "paper_url": "https://arxiv.org/abs/2508.20088",
+      "id": "arxiv:2508.20088",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/AudioStory",
+        "weights": null
+      },
+      "summary": {
+        "problem": "短音频生成器难把复杂叙事分解成连贯的长时声音事件。",
+        "method": "由语言模型规划分段，以语义和残差桥接标记分别传递内容及跨事件声学信息。",
+        "value": "联合优化理解与生成，支持叙事音频和视频配音。",
+        "limitation": "分段叙事生成不等同于可打断的实时对话音频。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2508.20088",
+        "https://arxiv.org/pdf/2508.20088",
+        "https://github.com/TencentARC/AudioStory",
+        "https://openaccess.thecvf.com/content/CVPR2026/html/Guo_AudioStory_Generating_Long-Form_Narrative_Audio_with_Large_Language_Models_CVPR_2026_paper.html"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "CubeComposer: Spatio-Temporal Autoregressive 4K 360deg Video Generation from Perspective Video",
+      "short_name": "CubeComposer",
+      "published": "2026-03-04",
+      "category": "视频生成基础",
+      "tags": [
+        "上下文管理",
+        "全景视频",
+        "视频生成",
+        "高分辨率"
+      ],
+      "venue": "CVPR 2026",
+      "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_CubeComposer_Spatio-Temporal_Autoregressive_4K_360deg_Video_Generation_from_Perspective_Video_CVPR_2026_paper.html",
+      "priority": "P1",
+      "priority_reason": "适合研究视频空间扩展、上下文管理与计算成本。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2603.04291",
+      "paper_url": "https://arxiv.org/abs/2603.04291",
+      "id": "arxiv:2603.04291",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/CubeComposer",
+        "weights": null
+      },
+      "summary": {
+        "problem": "全注意力限制全景视频原生分辨率，后超分容易放大误差。",
+        "method": "按覆盖率安排立方体各面及时窗生成，结合稀疏上下文注意力和接缝处理。",
+        "value": "以较低峰值显存生成原生高分辨率全景视频。",
+        "limitation": "可利用输入未来片段，不应直接视为完全因果的实时世界模型。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2603.04291",
+        "https://arxiv.org/pdf/2603.04291",
+        "https://github.com/TencentARC/CubeComposer",
+        "https://openaccess.thecvf.com/content/CVPR2026/html/Li_CubeComposer_Spatio-Temporal_Autoregressive_4K_360deg_Video_Generation_from_Perspective_Video_CVPR_2026_paper.html"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "short_name": "MotionCrafter",
+      "published": "2026-02-09",
+      "category": "三维生成与重建",
+      "tags": [
+        "4D",
+        "世界模型",
+        "表示学习"
+      ],
+      "venue": "CVPR 2026",
+      "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhu_MotionCrafter_Dense_Geometry_and_Motion_Reconstruction_with_a_4D_VAE_CVPR_2026_paper.html",
+      "priority": "P1",
+      "priority_reason": "联合几何与运动的潜变量表示适合世界模型状态设计。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2602.08961",
+      "paper_url": "https://arxiv.org/abs/2602.08961",
+      "id": "arxiv:2602.08961",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/MotionCrafter",
+        "weights": null
+      },
+      "summary": {
+        "problem": "单目动态重建将几何与运动分开预测，难保持全局对应。",
+        "method": "用专门训练的四维变分编码器联合压缩世界坐标点图与场景流。",
+        "value": "迁移视频生成先验，无需逐场景后优化即可恢复动态结构。",
+        "limitation": "任务是从已观测视频重建，尚未学习动作驱动的未来状态转移。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2602.08961",
+        "https://arxiv.org/pdf/2602.08961",
+        "https://github.com/TencentARC/MotionCrafter",
+        "https://openaccess.thecvf.com/content/CVPR2026/html/Zhu_MotionCrafter_Dense_Geometry_and_Motion_Reconstruction_with_a_4D_VAE_CVPR_2026_paper.html"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "VerseCrafter: Dynamic Realistic Video World Model with 4D Geometric Control",
+      "short_name": "VerseCrafter",
+      "published": "2026-01-08",
+      "category": "具身与世界模型",
+      "tags": [
+        "4D控制",
+        "世界模型",
+        "多对象",
+        "视频生成"
+      ],
+      "venue": "CVPR 2026",
+      "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zheng_VerseCrafter_Dynamic_Realistic_Video_World_Model_with_4D_Geometric_Control_CVPR_2026_paper.html",
+      "priority": "P0",
+      "priority_reason": "直接对应世界模型的可编辑状态、相机与多对象联合控制。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2601.05138",
+      "paper_url": "https://arxiv.org/abs/2601.05138",
+      "id": "arxiv:2601.05138",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/VerseCrafter",
+        "weights": null
+      },
+      "summary": {
+        "problem": "二维控制难在大视角变化下统一约束相机和多个对象运动。",
+        "method": "以背景点云及对象三维高斯轨迹表达状态，渲染控制图驱动视频模型。",
+        "value": "提供统一世界坐标中的可编辑视频生成接口。",
+        "limitation": "轨迹由外部给定，控制忠实度不等于模型自主预测物理动力学。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2601.05138",
+        "https://arxiv.org/pdf/2601.05138",
+        "https://github.com/TencentARC/VerseCrafter",
+        "https://openaccess.thecvf.com/content/CVPR2026/html/Zheng_VerseCrafter_Dynamic_Realistic_Video_World_Model_with_4D_Geometric_Control_CVPR_2026_paper.html"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "FreeSplatter: Pose-free Gaussian Splatting for Sparse-view 3D Reconstruction",
+      "short_name": "FreeSplatter",
+      "published": "2024-12-12",
+      "category": "三维生成与重建",
+      "tags": [
+        "3D",
+        "位姿估计",
+        "高斯表示"
+      ],
+      "venue": "ICCV 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "世界模型几何初始化和多视角融合的实用基础。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2412.09573",
+      "paper_url": "https://arxiv.org/abs/2412.09573",
+      "id": "arxiv:2412.09573",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/FreeSplatter",
+        "weights": null
+      },
+      "summary": {
+        "problem": "稀疏图像重建常依赖难以准确获得的相机标定。",
+        "method": "直接预测统一坐标中的像素对齐高斯，再用标准求解器恢复相机参数。",
+        "value": "兼顾快速新视角渲染与位姿估计，简化生成资产管线。",
+        "limitation": "以静态对象和场景为主，不能直接处理长期动态交互。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2412.09573",
+        "https://arxiv.org/pdf/2412.09573",
+        "https://github.com/TencentARC/FreeSplatter"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "HaploVL: A Single-Transformer Baseline for Multi-Modal Understanding",
+      "short_name": "HaploVL",
+      "published": "2025-03-12",
+      "category": "多模态架构与综述",
+      "tags": [
+        "多模态",
+        "早期融合",
+        "训练效率"
+      ],
+      "venue": "ICML 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "补充多模态骨干设计，近期优先于主线的价值有限。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2503.14694",
+      "paper_url": "https://arxiv.org/abs/2503.14694",
+      "id": "arxiv:2503.14694",
+      "links": {
+        "project": null,
+        "code": "https://github.com/Tencent/HaploVLM",
+        "weights": null
+      },
+      "summary": {
+        "problem": "独立视觉编码器容易压缩掉文本任务需要的细粒度信息。",
+        "method": "在单一 Transformer 中早期融合图文，并继承视觉与语言预训练知识。",
+        "value": "减少原生多模态训练成本并改善细粒度理解。",
+        "limitation": "主要验证视觉问答，未专门建模视频时序或 Agent 记忆。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2503.14694",
+        "https://arxiv.org/pdf/2503.14694",
+        "https://github.com/Tencent/HaploVLM"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "LoRA-Gen: Specializing Large Language Model via Online LoRA Generation",
+      "short_name": "LoRA-Gen",
+      "published": "2025-06-13",
+      "category": "智能体与上下文",
+      "tags": [
+        "Agent",
+        "LoRA",
+        "上下文压缩",
+        "端侧"
+      ],
+      "venue": "ICML 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "将任务上下文压进参数，适合研究低延迟 Agent 与记忆压缩。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2506.11638",
+      "paper_url": "https://arxiv.org/abs/2506.11638",
+      "id": "arxiv:2506.11638",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "小模型任务适配与长系统提示带来训练及推理成本。",
+        "method": "云端模型按任务描述组合低秩专家，生成可合并到端侧模型的参数。",
+        "value": "缩短推理上下文并支持未见任务的快速适配。",
+        "limitation": "需要预先训练生成器，压缩静态任务提示不同于持续更新情景记忆。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2506.11638",
+        "https://arxiv.org/pdf/2506.11638"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "NVComposer: Boosting Generative Novel View Synthesis with Multiple Sparse and Unposed Images",
+      "short_name": "NVComposer",
+      "published": "2024-12-04",
+      "category": "三维生成与重建",
+      "tags": [
+        "几何一致性",
+        "新视角",
+        "视频生成"
+      ],
+      "venue": "CVPR 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "弱位姿条件下的多视角生成与几何蒸馏关联世界模型。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2412.03517",
+      "paper_url": "https://arxiv.org/abs/2412.03517",
+      "id": "arxiv:2412.03517",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/NVComposer",
+        "weights": null
+      },
+      "summary": {
+        "problem": "少量视图重叠不足时，外部位姿对齐错误会破坏新视角生成。",
+        "method": "联合扩散图像与位姿，训练时蒸馏立体模型的几何特征。",
+        "value": "推理无需独立预重建即可利用多个未标定位图像。",
+        "limitation": "生成合理的新视图不保证真实几何，尚未建模动作条件动态。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2412.03517",
+        "https://arxiv.org/pdf/2412.03517",
+        "https://github.com/TencentARC/NVComposer"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Mani-GS: Gaussian Splatting Manipulation with Triangular Mesh",
+      "short_name": "Mani-GS",
+      "published": "2024-05-28",
+      "category": "三维生成与重建",
+      "tags": [
+        "3D",
+        "可编辑资产",
+        "高斯表示"
+      ],
+      "venue": "CVPR 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "Avatar 几何编辑和渲染可参考，优先级低于生成与交互模型。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2405.17811",
+      "paper_url": "https://arxiv.org/abs/2405.17811",
+      "id": "arxiv:2405.17811",
+      "links": {
+        "project": null,
+        "code": "https://github.com/gaoxiangjun/Mani-GS",
+        "weights": null
+      },
+      "summary": {
+        "problem": "高斯场景渲染快速，但大形变和局部编辑难保持质量。",
+        "method": "在三角形局部坐标中绑定高斯，随代理网格形变自适应调整属性。",
+        "value": "复用网格编辑与仿真工具，同时容忍不精确的代理表面。",
+        "limitation": "需要已有重建与网格，动作来源和动态物理仍由外部提供。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2405.17811",
+        "https://arxiv.org/pdf/2405.17811",
+        "https://github.com/gaoxiangjun/Mani-GS"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "DiTCtrl: Exploring Attention Control in Multi-Modal Diffusion Transformer for Tuning-Free Multi-Prompt Longer Video Generation",
+      "short_name": "DiTCtrl",
+      "published": "2024-12-24",
+      "category": "视频生成基础",
+      "tags": [
+        "多提示",
+        "视频生成",
+        "长时一致性"
+      ],
+      "venue": "CVPR 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "多事件视频的主体保持和提示切换是长视频控制的重要基线。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2412.18597",
+      "paper_url": "https://arxiv.org/abs/2412.18597",
+      "id": "arxiv:2412.18597",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/DiTCtrl",
+        "weights": null
+      },
+      "summary": {
+        "problem": "逐提示生成片段会产生身份断裂与不自然过渡。",
+        "method": "分析多模态扩散注意力，通过掩码引导的键值共享和潜变量混合连接片段。",
+        "value": "无需额外训练即可支持多提示连续视频，并提供转场评测。",
+        "limitation": "离线片段协调不等同于实时输入响应，控制依赖原模型能力。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2412.18597",
+        "https://arxiv.org/pdf/2412.18597",
+        "https://github.com/TencentARC/DiTCtrl"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Mono2Stereo: A Benchmark and Empirical Study for Stereo Conversion",
+      "short_name": "Mono2Stereo",
+      "published": "2025-03-28",
+      "category": "视频生成基础",
+      "tags": [
+        "立体转换",
+        "视频生成",
+        "评测"
+      ],
+      "venue": "CVPR 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "补充多视角一致性和感知评价，主要用于立体内容生产。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2503.22262",
+      "paper_url": "https://arxiv.org/abs/2503.22262",
+      "id": "arxiv:2503.22262",
+      "links": {
+        "project": null,
+        "code": "https://github.com/song2yu/Mono2Stereo",
+        "weights": null
+      },
+      "summary": {
+        "problem": "单目转立体容易在图像质量与有效视差之间失衡。",
+        "method": "构建立体数据集，以双条件和边缘一致性训练模型，并设计视差指标。",
+        "value": "将立体感与整体画质分开衡量。",
+        "limitation": "立体视差评估不能替代完整三维一致性或长时动态验证。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2503.22262",
+        "https://arxiv.org/pdf/2503.22262",
+        "https://github.com/song2yu/Mono2Stereo"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "DepthCrafter: Generating Consistent Long Depth Sequences for Open-world Videos",
+      "short_name": "DepthCrafter",
+      "published": "2024-09-03",
+      "category": "视觉感知",
+      "tags": [
+        "时序一致性",
+        "深度估计",
+        "视频理解"
+      ],
+      "venue": "CVPR 2025 [Highlight]",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "长时稳定深度可用于世界模型几何监督与视频控制。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2409.02095",
+      "paper_url": "https://arxiv.org/abs/2409.02095",
+      "id": "arxiv:2409.02095",
+      "links": {
+        "project": null,
+        "code": "https://github.com/Tencent/DepthCrafter",
+        "weights": null
+      },
+      "summary": {
+        "problem": "逐帧深度预测会闪烁，依赖相机位姿的优化又难适配开放视频。",
+        "method": "分阶段融合真实与合成数据训练视频扩散模型，并重叠拼接长序列。",
+        "value": "利用生成先验获得细节丰富且时间一致的深度。",
+        "limitation": "单目尺度仍存在歧义，分段稳定性不等同于长期全局几何正确。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2409.02095",
+        "https://arxiv.org/pdf/2409.02095",
+        "https://github.com/Tencent/DepthCrafter"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Taming Rectified Flow for Inversion and Editing",
+      "short_name": "Taming Rectified Flow for Inversion and Editing",
+      "published": "2024-11-07",
+      "category": "图像生成与编辑",
+      "tags": [
+        "流匹配",
+        "视频生成",
+        "视频编辑"
+      ],
+      "venue": "ICML 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "理解流匹配采样误差与视频编辑中的结构保持。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2411.04746",
+      "paper_url": "https://arxiv.org/abs/2411.04746",
+      "id": "arxiv:2411.04746",
+      "links": {
+        "project": null,
+        "code": "https://github.com/wangjiangshan0725/RF-Solver-Edit",
+        "weights": null
+      },
+      "summary": {
+        "problem": "流模型反演的数值误差会逐步累积，导致重建和编辑偏离源内容。",
+        "method": "用高阶展开改进常微分方程求解，再共享反演注意力特征进行编辑。",
+        "value": "无需训练即可增强图像与视频的结构保真。",
+        "limitation": "改进的是采样和反演误差，不直接解决跨视频时间的自回归漂移。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2411.04746",
+        "https://arxiv.org/pdf/2411.04746",
+        "https://github.com/wangjiangshan0725/RF-Solver-Edit"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "DI-PCG: Diffusion-based Efficient Inverse Procedural Content Generation for High-quality 3D Asset Creation",
+      "short_name": "DI-PCG",
+      "published": "2024-12-19",
+      "category": "三维生成与重建",
+      "tags": [
+        "3D",
+        "条件扩散",
+        "程序化生成"
+      ],
+      "venue": "CVPR 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "程序化资产生成可为世界模型构造可编辑训练环境。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2412.15200",
+      "paper_url": "https://arxiv.org/abs/2412.15200",
+      "id": "arxiv:2412.15200",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/DI-PCG",
+        "weights": null
+      },
+      "summary": {
+        "problem": "程序化建模参数难手调，传统逆向搜索需要大量采样。",
+        "method": "直接对生成器参数进行条件扩散，以图像特征引导参数恢复。",
+        "value": "用小模型快速生成可编辑资产，并可自生成训练数据。",
+        "limitation": "表达范围受预设程序生成器限制，不能覆盖任意开放世界结构。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2412.15200",
+        "https://arxiv.org/pdf/2412.15200",
+        "https://github.com/TencentARC/DI-PCG"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "ATP-LLaVA: Adaptive Token Pruning for Large Vision Language Models",
+      "short_name": "ATP-LLaVA",
+      "published": "2024-11-30",
+      "category": "训练与推理效率",
+      "tags": [
+        "Agent",
+        "推理效率",
+        "视觉压缩"
+      ],
+      "venue": "CVPR 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "自适应算力分配可用于实时视觉 Agent 的感知加速。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2412.00447",
+      "paper_url": "https://arxiv.org/abs/2412.00447",
+      "id": "arxiv:2412.00447",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "固定视觉剪枝率无法适配不同层和任务的信息需求。",
+        "method": "依据跨模态冗余与空间信息学习逐层、逐样本剪枝阈值。",
+        "value": "在降低视觉标记开销时保留细粒度理解能力。",
+        "limitation": "需要训练剪枝模块，极小目标和复杂空间关系仍可能损失信息。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2412.00447",
+        "https://arxiv.org/pdf/2412.00447"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "VoCo-LLaMA: Towards Vision Compression with Large Language Models",
+      "short_name": "VoCo-LLaMA",
+      "published": "2024-06-18",
+      "category": "训练与推理效率",
+      "tags": [
+        "Agent",
+        "上下文压缩",
+        "视频记忆"
+      ],
+      "venue": "CVPR 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "视觉缓存压缩与重复查询直接关联 Agent 的视频记忆。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2406.12275",
+      "paper_url": "https://arxiv.org/abs/2406.12275",
+      "id": "arxiv:2406.12275",
+      "links": {
+        "project": null,
+        "code": "https://github.com/Yxxxb/VoCo-LLaMA",
+        "weights": null
+      },
+      "summary": {
+        "problem": "视频帧的视觉标记占满上下文，外部压缩又容易丢失任务信息。",
+        "method": "在语言模型内引入压缩标记并蒸馏理解路径，逐帧压缩后建模时序。",
+        "value": "压缩表示可缓存复用，扩大同等上下文内的视频覆盖。",
+        "limitation": "极高压缩仍损失细节，缓存表示不包含主动记忆更新策略。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2406.12275",
+        "https://arxiv.org/pdf/2406.12275",
+        "https://github.com/Yxxxb/VoCo-LLaMA"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Moto: Latent Motion Token as the Bridging Language for Learning Robot Manipulation from Videos",
+      "short_name": "Moto",
+      "published": "2024-12-05",
+      "category": "具身与世界模型",
+      "tags": [
+        "世界模型",
+        "机器人",
+        "潜在动作",
+        "视频预训练"
+      ],
+      "venue": "ICCV 2025 [Oral]",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P0",
+      "priority_reason": "连接视频运动预训练与动作执行，是世界模型和规划交叉的重点。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2412.04445",
+      "paper_url": "https://arxiv.org/abs/2412.04445",
+      "id": "arxiv:2412.04445",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/Moto",
+        "weights": null
+      },
+      "summary": {
+        "problem": "无动作标注视频丰富，却缺少能迁移到机器人控制的预训练表示。",
+        "method": "将相邻帧变化离散化为运动标记，自回归预训练后与真实动作联合微调。",
+        "value": "从视频学习运动先验并迁移到操作策略。",
+        "limitation": "潜在运动并非天然可执行动作，迁移仍需机器人动作标注。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2412.04445",
+        "https://arxiv.org/pdf/2412.04445",
+        "https://github.com/TencentARC/Moto"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "GeometryCrafter: Consistent Geometry Estimation for Open-world Videos with Diffusion Priors",
+      "short_name": "GeometryCrafter",
+      "published": "2025-04-01",
+      "category": "三维生成与重建",
+      "tags": [
+        "世界模型",
+        "几何重建",
+        "时序一致性"
+      ],
+      "venue": "ICCV 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "补齐从时间一致深度到可重建三维点图的表示路径。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2504.01016",
+      "paper_url": "https://arxiv.org/abs/2504.01016",
+      "id": "arxiv:2504.01016",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/GeometryCrafter",
+        "weights": null
+      },
+      "summary": {
+        "problem": "有界深度编码丢失远处几何，逐帧预测又缺乏时间稳定性。",
+        "method": "以对数深度和视场分解点图，双编码器保留几何信息并迁移视频扩散先验。",
+        "value": "恢复连贯点图并支持重建与相机参数估计。",
+        "limitation": "估计仍依赖单目先验，几何正确性受输入与数据分布限制。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2504.01016",
+        "https://arxiv.org/pdf/2504.01016",
+        "https://github.com/TencentARC/GeometryCrafter"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "NormalCrafter: Learning Temporally Consistent Normals from Video Diffusion Priors",
+      "short_name": "NormalCrafter",
+      "published": "2025-04-15",
+      "category": "三维生成与重建",
+      "tags": [
+        "时序一致性",
+        "法线估计",
+        "视频理解"
+      ],
+      "venue": "ICCV 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "表面法线可辅助视频物理外观、重光照与几何一致性研究。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2504.11427",
+      "paper_url": "https://arxiv.org/abs/2504.11427",
+      "id": "arxiv:2504.11427",
+      "links": {
+        "project": null,
+        "code": "https://github.com/Binyr/NormalCrafter",
+        "weights": null
+      },
+      "summary": {
+        "problem": "图像法线模型逐帧使用会闪烁，视频先验又容易过度平滑细节。",
+        "method": "用语义特征正则增强结构，并分阶段进行潜空间和像素空间训练。",
+        "value": "兼顾长时上下文与局部表面细节。",
+        "limitation": "输出局部几何属性，不能单独形成完整可交互的世界状态。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2504.11427",
+        "https://arxiv.org/pdf/2504.11427",
+        "https://github.com/Binyr/NormalCrafter"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "TrajectoryCrafter: Redirecting Camera Trajectory for Monocular Videos via Diffusion Models",
+      "short_name": "TrajectoryCrafter",
+      "published": "2025-03-07",
+      "category": "视频生成基础",
+      "tags": [
+        "几何一致性",
+        "相机控制",
+        "视频生成"
+      ],
+      "venue": "ICCV 2025 [Oral]",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "相机可控性和动态场景保持是视频生成核心控制问题。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2503.05638",
+      "paper_url": "https://arxiv.org/abs/2503.05638",
+      "id": "arxiv:2503.05638",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TrajectoryCrafter/TrajectoryCrafter",
+        "weights": null
+      },
+      "summary": {
+        "problem": "单目动态视频改换相机路径时，遮挡补全与几何变换容易混淆。",
+        "method": "分离确定性点云重投影与生成补全，以双流条件融合源视频。",
+        "value": "通过双重投影构造训练数据，减少同步多视角视频依赖。",
+        "limitation": "质量依赖深度与重投影，未观测区域仍是推测性生成。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2503.05638",
+        "https://arxiv.org/pdf/2503.05638",
+        "https://github.com/TrajectoryCrafter/TrajectoryCrafter"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "UniPixel: Unified Object Referring and Segmentation for Pixel-Level Visual Reasoning",
+      "short_name": "UniPixel",
+      "published": "2025-09-22",
+      "category": "视觉感知",
+      "tags": [
+        "Agent",
+        "分割",
+        "对象记忆",
+        "视频理解"
+      ],
+      "venue": "NeurIPS 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "对象级记忆库可直接借鉴到视频 Agent 的状态追踪。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2509.18094",
+      "paper_url": "https://arxiv.org/abs/2509.18094",
+      "id": "arxiv:2509.18094",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "整体视频问答难对用户指定对象进行定位、跟踪并持续推理。",
+        "method": "统一指代与分割表示，用对象记忆库保存时空信息并按需更新。",
+        "value": "在同一模型中支持视觉提示、掩码输出和对象关系问答。",
+        "limitation": "记忆主要服务当前输入中的对象，跨会话持久记忆尚未验证。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2509.18094",
+        "https://arxiv.org/pdf/2509.18094"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "MindOmni: Unleashing Reasoning Generation in Vision Language Models with RGPO",
+      "short_name": "MindOmni",
+      "published": "2025-05-19",
+      "category": "评测与可靠性",
+      "tags": [
+        "强化学习",
+        "生成规划",
+        "统一生成理解"
+      ],
+      "venue": "NeurIPS 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "推理计划与生成反馈联合优化可借鉴到视频规划生成。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2505.13031",
+      "paper_url": "https://arxiv.org/abs/2505.13031",
+      "id": "arxiv:2505.13031",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/MindOmni",
+        "weights": null
+      },
+      "summary": {
+        "problem": "固定文本编码难处理需要知识、数学或视觉推理的生成指令。",
+        "method": "先统一理解生成并进行思维链监督，再用图文一致性奖励优化推理。",
+        "value": "将显式推理与细粒度生成编辑结合。",
+        "limitation": "主要面向图像，奖励一致性不足以保证长时视频中的因果正确。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2505.13031",
+        "https://arxiv.org/pdf/2505.13031",
+        "https://github.com/TencentARC/MindOmni"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "DOGR: Towards Versatile Visual Document Grounding and Referring",
+      "short_name": "DOGR",
+      "published": "2024-11-26",
+      "category": "多模态检索",
+      "tags": [
+        "Agent",
+        "文档理解",
+        "视觉定位"
+      ],
+      "venue": "ICCV 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "可作为文档型 Agent 的精确证据定位基础。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2411.17125",
+      "paper_url": "https://arxiv.org/abs/2411.17125",
+      "id": "arxiv:2411.17125",
+      "links": {
+        "project": null,
+        "code": "https://github.com/zyinan99/DOGR",
+        "weights": null
+      },
+      "summary": {
+        "problem": "密集文档中的定位与指代能力受低质量标注和单一任务限制。",
+        "method": "构建多粒度解析与对话指令数据，统一文本定位和区域理解。",
+        "value": "支持可回溯到具体位置的文档问答并提供系统评测。",
+        "limitation": "重点是静态文档感知，规划与长期记忆需其他模块补充。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2411.17125",
+        "https://arxiv.org/pdf/2411.17125",
+        "https://github.com/zyinan99/DOGR"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Mamba-3VL: Taming State Space Model for 3D Vision Language Learning",
+      "short_name": "Mamba-3VL",
+      "published": null,
+      "category": "多模态检索",
+      "tags": [
+        "Agent",
+        "状态空间模型",
+        "空间推理"
+      ],
+      "venue": "ICCV 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "线性复杂度的三维关系建模可补充空间 Agent 状态处理。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": null,
+      "paper_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Mamba-3VL_Taming_State_Space_Model_for_3D_Vision_Language_Learning_ICCV_2025_paper.pdf",
+      "id": "url:a48f9a23069b18623041",
+      "links": {
+        "project": null,
+        "code": "https://github.com/wangyuan123ac/Mamba-3VL",
+        "weights": null
+      },
+      "summary": {
+        "problem": "三维点云转序列会破坏空间关系，全注意力又成本较高。",
+        "method": "用近邻与远邻扫描、通道融合及实例位置适配增强状态空间模型。",
+        "value": "高效统一三维定位、分割与问答任务。",
+        "limitation": "主要验证已建模场景理解，开放动态世界中的持续状态更新仍待验证。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://github.com/wangyuan123ac/Mamba-3VL",
+        "https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Mamba-3VL_Taming_State_Space_Model_for_3D_Vision_Language_Learning_ICCV_2025_paper.pdf"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Visionmath: Vision-form mathematical problem-solving",
+      "short_name": "Visionmath",
+      "published": null,
+      "category": "评测与可靠性",
+      "tags": [
+        "数学",
+        "数据集",
+        "视觉推理"
+      ],
+      "venue": "ICCV 2025",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P3",
+      "priority_reason": "主要是视觉数学解题，和当前视频、Avatar、记忆主线较远。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": null,
+      "paper_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Ma_VisionMath_Vision-Form_Mathematical_Problem-Solving_ICCV_2025_paper.pdf",
+      "id": "url:8533f1333a0952d19898",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "将题干与图形合在一张图中后，现有模型的解题准确性下降。",
+        "method": "分阶段学习文字识别、图形理解和联合推理，并利用教学视频补充图形知识。",
+        "value": "建立中英双语视觉题目训练与评测体系。",
+        "limitation": "数学截图场景较专门，不能直接代表动态世界推理。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://openaccess.thecvf.com/content/ICCV2025/papers/Ma_VisionMath_Vision-Form_Mathematical_Problem-Solving_ICCV_2025_paper.pdf"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Cached Transformers: Improving Transformers with Differentiable Memory Cache",
+      "short_name": "Cached Transformers",
+      "published": "2023-12-20",
+      "category": "智能体与上下文",
+      "tags": [
+        "记忆机制",
+        "递归缓存",
+        "长上下文"
+      ],
+      "venue": "AAAI 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "可微递归缓存为 Agent 和视频模型的压缩记忆提供基础。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2312.12742",
+      "paper_url": "https://arxiv.org/abs/2312.12742",
+      "id": "arxiv:2312.12742",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "扩大注意力范围会增加计算和存储，完整历史缓存难以扩展。",
+        "method": "用重置门与更新门压缩历史表示，让注意力同时访问缓存与当前标记。",
+        "value": "以有限缓存建模长依赖，并适用于语言和视觉骨干。",
+        "limitation": "压缩记忆可能遗失可精确回溯的信息，尚未验证长期 Agent 任务。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2312.12742",
+        "https://arxiv.org/pdf/2312.12742"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "T2I-Adapter: Learning Adapters to Dig out More Controllable Ability for Text-to-Image Diffusion Models",
+      "short_name": "T2I-Adapter",
+      "published": "2023-02-16",
+      "category": "图像生成与编辑",
+      "tags": [
+        "图像生成",
+        "条件控制",
+        "适配器"
+      ],
+      "venue": "AAAI 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "轻量条件控制是视频与 Avatar 控制分支的重要基础。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2302.08453",
+      "paper_url": "https://arxiv.org/abs/2302.08453",
+      "id": "arxiv:2302.08453",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/T2I-Adapter",
+        "weights": null
+      },
+      "summary": {
+        "problem": "仅靠文字难准确控制生成结果的结构、颜色和姿态。",
+        "method": "冻结生成骨干，用轻量适配器对齐外部控制信号与内部多尺度特征。",
+        "value": "不同条件可组合，并能迁移到同源定制模型。",
+        "limitation": "原始验证在静态图像，视频扩展仍需处理时序及条件冲突。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2302.08453",
+        "https://arxiv.org/pdf/2302.08453",
+        "https://github.com/TencentARC/T2I-Adapter"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Sparse3D: Distilling Multiview-Consistent Diffusion for Object Reconstruction from Sparse Views",
+      "short_name": "Sparse3D",
+      "published": "2023-08-27",
+      "category": "三维生成与重建",
+      "tags": [
+        "3D",
+        "多视角一致性",
+        "蒸馏"
+      ],
+      "venue": "AAAI 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "多视角约束与生成先验结合，可作为世界模型几何背景。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2308.14078",
+      "paper_url": "https://arxiv.org/abs/2308.14078",
+      "id": "arxiv:2308.14078",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "极少视图下的重建难兼顾新视角质量、几何一致性和细节。",
+        "method": "以极线特征控制图像扩散，再用类别分数蒸馏优化辐射场。",
+        "value": "增强未见类别的稀疏重建并减少过平滑。",
+        "limitation": "需要已知位姿及逐对象优化，生成的遮挡区域仍可能偏离真实形状。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2308.14078",
+        "https://arxiv.org/pdf/2308.14078"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "SparseGNV: Generating Novel Views of Indoor Scenes with Sparse Input Views",
+      "short_name": "SparseGNV",
+      "published": "2023-05-11",
+      "category": "三维生成与重建",
+      "tags": [
+        "3D",
+        "场景表示",
+        "新视角"
+      ],
+      "venue": "AAAI 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "早期显式几何与生成上下文结合方案，适合作为背景阅读。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2305.07024",
+      "paper_url": "https://arxiv.org/abs/2305.07024",
+      "id": "arxiv:2305.07024",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "稀疏室内视图缺少覆盖，直接重建或二维补全难保持一致。",
+        "method": "用神经点云渲染提供结构上下文，再自回归生成新视角图像标记。",
+        "value": "联合几何约束与跨场景生成先验。",
+        "limitation": "依赖静态室内场景及几何输入，未建模动态状态转移。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2305.07024",
+        "https://arxiv.org/pdf/2305.07024"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "SphereDiffusion: Spherical Geometry-Aware Distortion Resilient Diffusion Model",
+      "short_name": "SphereDiffusion",
+      "published": "2024-03-15",
+      "category": "图像生成与编辑",
+      "tags": [
+        "全景生成",
+        "几何约束",
+        "图像生成"
+      ],
+      "venue": "AAAI 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "全景空间连续性设计可补充沉浸式世界内容生成。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2403.10044",
+      "paper_url": "https://arxiv.org/abs/2403.10044",
+      "id": "arxiv:2403.10044",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "平面扩散先验难处理球面畸变，容易错配语义并产生接缝。",
+        "method": "注入对象语义与可变形特征，通过球面旋转训练和去噪增强几何一致性。",
+        "value": "提高分割条件下的可控全景图像质量。",
+        "limitation": "主要验证静态室内全景，未涵盖动态视频和自由平移视角。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2403.10044",
+        "https://arxiv.org/pdf/2403.10044"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Neural Concatenative Singing Voice Conversion: Rethinking Concatenation-Based Approach for One-Shot Singing Voice Conversion",
+      "short_name": "Neural Concatenative Singing Voice Conversion",
+      "published": "2023-12-08",
+      "category": "语音与音频",
+      "tags": [
+        "Avatar",
+        "语音转换",
+        "音色控制"
+      ],
+      "venue": "ICASSP 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "声音身份保持可补充 Avatar 语音方向，重点仍是歌声转换。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2312.04919",
+      "paper_url": "https://arxiv.org/abs/2312.04919",
+      "id": "arxiv:2312.04919",
+      "links": {
+        "project": null,
+        "code": "https://github.com/thuhcsi/NeuCoSVC",
+        "weights": null
+      },
+      "summary": {
+        "problem": "内容与音色解耦不充分会让转换歌声残留原歌手特征。",
+        "method": "从目标录音检索相近自监督特征，再结合显式音高、响度和谐波滤波合成。",
+        "value": "利用参考特征减少音色泄漏并保持旋律。",
+        "limitation": "表现依赖参考片段的覆盖，未验证完整实时对话链路。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2312.04919",
+        "https://arxiv.org/pdf/2312.04919",
+        "https://github.com/thuhcsi/NeuCoSVC"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Music Understanding LLaMA: Advancing Text-to-Music Generation with Question Answering and Captioning",
+      "short_name": "Music Understanding LLaMA",
+      "published": "2023-08-22",
+      "category": "语音与音频",
+      "tags": [
+        "数据构建",
+        "音乐",
+        "音频理解"
+      ],
+      "venue": "ICASSP 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P3",
+      "priority_reason": "音乐标注管线可作数据工程参考，与核心研究目标较远。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2308.11276",
+      "paper_url": "https://arxiv.org/abs/2308.11276",
+      "id": "arxiv:2308.11276",
+      "links": {
+        "project": null,
+        "code": "https://github.com/crypto-code/MU-LLaMA",
+        "weights": null
+      },
+      "summary": {
+        "problem": "开放音乐文本对稀缺，通用音频问答模型又缺少音乐知识。",
+        "method": "连接音乐编码器与语言模型，用已有描述和标签构造问答训练集。",
+        "value": "通过音乐问答自动生成多种形式的描述。",
+        "limitation": "文本伪标注可能传播错误，工作本身并非音乐或视频生成器。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2308.11276",
+        "https://arxiv.org/pdf/2308.11276",
+        "https://github.com/crypto-code/MU-LLaMA"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "HumTrans: A Novel Open-Source Dataset for Humming Melody Transcription and Beyond",
+      "short_name": "HumTrans",
+      "published": "2023-09-18",
+      "category": "语音与音频",
+      "tags": [
+        "数据集",
+        "音乐转录",
+        "音频"
+      ],
+      "venue": "ICASSP 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P3",
+      "priority_reason": "面向哼唱转录数据，当前可暂缓。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2309.09623",
+      "paper_url": "https://arxiv.org/abs/2309.09623",
+      "id": "arxiv:2309.09623",
+      "links": {
+        "project": null,
+        "code": "https://github.com/shansongliu/HumTrans",
+        "weights": null
+      },
+      "summary": {
+        "problem": "哼唱音高不稳定且公开标注数据稀缺，限制自动转谱研究。",
+        "method": "让具备音乐经验的参与者跟随乐谱与旋律录制，构建配套音频和转录基线。",
+        "value": "提供较大规模的公开哼唱研究资源。",
+        "limitation": "参与者和录制方式较受控，不能代表所有自然随意哼唱。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2309.09623",
+        "https://arxiv.org/pdf/2309.09623",
+        "https://github.com/shansongliu/HumTrans"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Unified Pretraining Target Based Video-music Retrieval With Music Rhythm And Video Optical Flow Information",
+      "short_name": "Unified Pretraining Target Based Video-music Retrieval With Music Rhythm And Video Optical Flow Information",
+      "published": "2023-09-18",
+      "category": "语音与音频",
+      "tags": [
+        "检索",
+        "节奏",
+        "音视频对齐"
+      ],
+      "venue": "ICASSP 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "节奏与运动对齐可为音视频联合生成提供评价思路。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2309.09421",
+      "paper_url": "https://arxiv.org/abs/2309.09421",
+      "id": "arxiv:2309.09421",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC-QQ/UT-CMVMR",
+        "weights": null
+      },
+      "summary": {
+        "problem": "视频与音乐独立预训练目标不一致，全局平均特征又丢失节奏对应。",
+        "method": "统一预训练标签，以片段特征结合音乐节奏和视频光流进行跨模态匹配。",
+        "value": "增强配乐检索的语义及时间相关性。",
+        "limitation": "任务是检索已有音乐，未直接生成或实现细粒度音画同步。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2309.09421",
+        "https://arxiv.org/pdf/2309.09421",
+        "https://github.com/TencentARC-QQ/UT-CMVMR"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Making LLaMA SEE and Draw with SEED Tokenizer",
+      "short_name": "Making LLaMA SEE and Draw with SEED Tokenizer",
+      "published": "2023-10-02",
+      "category": "多模态架构与综述",
+      "tags": [
+        "统一生成理解",
+        "自回归",
+        "视觉标记"
+      ],
+      "venue": "ICLR 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "统一多模态离散表示是世界模型与交互生成的重要背景。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2310.01218",
+      "paper_url": "https://arxiv.org/abs/2310.01218",
+      "id": "arxiv:2310.01218",
+      "links": {
+        "project": null,
+        "code": "https://github.com/AILab-CVC/SEED",
+        "weights": null
+      },
+      "summary": {
+        "problem": "低层视觉标记与语言语义错位，难统一图文理解和生成。",
+        "method": "以因果查询模块生成高层离散视觉编码，再进行交错图文下一标记训练。",
+        "value": "使语言模型在多轮上下文中同时理解与生成图像。",
+        "limitation": "视觉解码依赖扩散模块，原始方案未解决实时长视频动力学。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2310.01218",
+        "https://arxiv.org/pdf/2310.01218",
+        "https://github.com/AILab-CVC/SEED"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Chinese Title Generation for Short Videos: Dataset, Metric and Algorithm",
+      "short_name": "CREATE / ACTEr / ALWIG",
+      "published": null,
+      "category": "视频理解与推理",
+      "tags": [
+        "中文数据集",
+        "待补引言",
+        "视频标题"
+      ],
+      "venue": "TPAMI 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "暂定：视频标题与吸引力评测属于内容理解支线；引言尚未取得，暂缓方法判断。",
+      "reading_status": "metadata-only",
+      "doi": "10.1109/tpami.2024.3365739",
+      "arxiv_id": null,
+      "paper_url": "https://doi.org/10.1109/TPAMI.2024.3365739",
+      "id": "doi:10.1109/tpami.2024.3365739",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "该工作研究中文短视频标题生成；此条目前仅完成身份与期刊信息核验。",
+        "method": "尚未取得期刊版引言，不以早期会议稿替代阅读。",
+        "value": "保留官方收录记录，便于补齐期刊版阅读。",
+        "limitation": "当前优先级仅为主题相关性的暂定判断，未对方法、实验及版本增量作结论。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://doi.org/10.1109/TPAMI.2024.3365739"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "SmartEdit: Exploring Complex Instruction-based Image Editing with Multimodal Large Language Models",
+      "short_name": "SmartEdit",
+      "published": "2023-12-11",
+      "category": "图像生成与编辑",
+      "tags": [
+        "图像编辑",
+        "多模态推理",
+        "指令控制"
+      ],
+      "venue": "CVPR 2024 [Highlight]",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "复杂视觉指令到生成控制的桥接可作为基础阅读。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2312.06739",
+      "paper_url": "https://arxiv.org/abs/2312.06739",
+      "id": "arxiv:2312.06739",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/SmartEdit",
+        "weights": null
+      },
+      "summary": {
+        "problem": "简单文本编码难定位具有属性关系或常识约束的编辑对象。",
+        "method": "引入多模态语言模型与双向交互，再用感知数据和少量复杂编辑数据训练。",
+        "value": "提升复杂指令理解并提供专门评测集。",
+        "limitation": "仍是静态编辑，无法据此推断视频身份保持或实时交互能力。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2312.06739",
+        "https://arxiv.org/pdf/2312.06739",
+        "https://github.com/TencentARC/SmartEdit"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "BT-Adapter: Video Conversation is Feasible Without Video Instruction Tuning",
+      "short_name": "BT-Adapter",
+      "published": "2023-09-27",
+      "category": "视频理解与推理",
+      "tags": [
+        "视频理解",
+        "训练效率",
+        "适配器"
+      ],
+      "venue": "CVPR 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "低成本引入时间建模，适合视频 Agent 感知骨干选型。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2309.15785",
+      "paper_url": "https://arxiv.org/abs/2309.15785",
+      "id": "arxiv:2309.15785",
+      "links": {
+        "project": null,
+        "code": "https://github.com/farewellthree/BT-Adapter",
+        "weights": null
+      },
+      "summary": {
+        "problem": "图像对话模型缺乏时序能力，而完整视频微调成本较高。",
+        "method": "冻结图像编码器，训练旁路时空适配器与非对称掩码对齐任务。",
+        "value": "可接入共享视觉编码器的对话模型，减少视频指令数据依赖。",
+        "limitation": "依赖兼容的图像编码器，未专门解决长时记忆与在线响应。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2309.15785",
+        "https://arxiv.org/pdf/2309.15785",
+        "https://github.com/farewellthree/BT-Adapter"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "How to Make Cross Encoder a Good Teacher for Efficient Image-Text Retrieval?",
+      "short_name": "CPRD",
+      "published": "2024-07-10",
+      "category": "多模态检索",
+      "tags": [
+        "多模态",
+        "检索",
+        "蒸馏"
+      ],
+      "venue": "CVPR 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "可借鉴到多模态记忆检索器蒸馏，主线相关度为间接。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2407.07479",
+      "paper_url": "https://arxiv.org/abs/2407.07479",
+      "id": "arxiv:2407.07479",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "交叉编码器准确但慢，其分数分布又不适合直接蒸馏给双编码器。",
+        "method": "仅对难负例的相对次序做对比排序蒸馏，忽略无效负例间的次序。",
+        "value": "以兼容原训练目标的方式提升高效图文检索。",
+        "limitation": "验证集中在图文匹配，长期记忆读写与时间关系需另行设计。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2407.07479",
+        "https://arxiv.org/pdf/2407.07479"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "ViT-Lens: Towards Omni-modal Representations",
+      "short_name": "ViT-Lens",
+      "published": "2023-11-27",
+      "category": "多模态架构与综述",
+      "tags": [
+        "多模态",
+        "表示学习",
+        "适配器"
+      ],
+      "venue": "CVPR 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "跨模态感知适配可补充具身 Agent 输入设计。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2311.16081",
+      "paper_url": "https://arxiv.org/abs/2311.16081",
+      "id": "arxiv:2311.16081",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/ViT-Lens",
+        "weights": null
+      },
+      "summary": {
+        "problem": "稀缺传感模态缺少足量训练数据，难复用大模型能力。",
+        "method": "用模态专属映射接入冻结视觉骨干，并对齐已有共享语义空间。",
+        "value": "支持点云、深度、音频等模态接入理解与生成模型。",
+        "limitation": "语义对齐不保证保留精确物理量或时间动力学。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2311.16081",
+        "https://arxiv.org/pdf/2311.16081",
+        "https://github.com/TencentARC/ViT-Lens"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "YOLO-World: Real-Time Open-Vocabulary Object Detection",
+      "short_name": "YOLO-World",
+      "published": "2024-01-30",
+      "category": "视觉感知",
+      "tags": [
+        "Agent",
+        "实时感知",
+        "目标检测"
+      ],
+      "venue": "CVPR 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "适合实时交互 Agent 的开放词汇感知前端。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2401.17270",
+      "paper_url": "https://arxiv.org/abs/2401.17270",
+      "id": "arxiv:2401.17270",
+      "links": {
+        "project": null,
+        "code": "https://github.com/AILab-CVC/YOLO-World",
+        "weights": null
+      },
+      "summary": {
+        "problem": "固定类别检测器无法覆盖开放场景，开放词汇模型又常过于昂贵。",
+        "method": "用区域文本对比预训练和可重参数化图文融合，离线编码用户词汇。",
+        "value": "减少在线文本编码成本，兼顾开放类别与检测效率。",
+        "limitation": "预编码词汇变化时需更新，检测结果本身不含对象记忆或规划。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2401.17270",
+        "https://arxiv.org/pdf/2401.17270",
+        "https://github.com/AILab-CVC/YOLO-World"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "SEED-Bench-2: Benchmarking Multimodal Large Language Models",
+      "short_name": "SEED-Bench-2",
+      "published": "2023-11-28",
+      "category": "评测与可靠性",
+      "tags": [
+        "多模态",
+        "统一生成理解",
+        "评测"
+      ],
+      "venue": "CVPR 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "可作为多模态能力分层评测背景，主线更需长时与交互指标。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2311.17092",
+      "paper_url": "https://arxiv.org/abs/2311.17092",
+      "id": "arxiv:2311.17092",
+      "links": {
+        "project": null,
+        "code": "https://github.com/AILab-CVC/SEED-Bench",
+        "weights": null
+      },
+      "summary": {
+        "problem": "只测单张图文理解无法覆盖交错输入及图文输出能力。",
+        "method": "按输入输出模态划分层级，构建跨图像、视频和生成任务的人工核验选择题。",
+        "value": "提供可复现的分维度能力诊断。",
+        "limitation": "选择题不能充分衡量开放生成质量，也未直接评价闭环交互。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2311.17092",
+        "https://arxiv.org/pdf/2311.17092",
+        "https://github.com/AILab-CVC/SEED-Bench"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "Rethinking the Objectives of Vector-Quantized Tokenizers for Image Synthesis",
+      "short_name": "VQ Tokenizer Objectives",
+      "published": "2022-12-06",
+      "category": "训练与推理效率",
+      "tags": [
+        "生成建模",
+        "表示学习",
+        "视觉标记"
+      ],
+      "venue": "CVPR 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "重建质量不等于生成可学性，是视频和世界模型 tokenizer 的关键视角。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2212.03185",
+      "paper_url": "https://arxiv.org/abs/2212.03185",
+      "id": "arxiv:2212.03185",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/BasicVQ-GEN",
+        "weights": null
+      },
+      "summary": {
+        "problem": "提升量化编码器重建保真度未必提升后续生成质量。",
+        "method": "先强化语义压缩，再冻结编码器与码本、单独增强解码器细节恢复。",
+        "value": "把潜表示的可预测性和像素细节恢复分开优化。",
+        "limitation": "证据主要来自图像，视频运动信息与时序压缩仍需额外验证。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2212.03185",
+        "https://arxiv.org/pdf/2212.03185",
+        "https://github.com/TencentARC/BasicVQ-GEN"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "LLaMA Pro: Progressive LLaMA with Block Expansion",
+      "short_name": "LLaMA Pro",
+      "published": "2024-01-04",
+      "category": "训练与推理效率",
+      "tags": [
+        "Agent",
+        "持续学习",
+        "模型扩展"
+      ],
+      "venue": "ACL 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "持续能力扩展可补充 Agent 学习，和情景记忆不是同一问题。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2401.02415",
+      "paper_url": "https://arxiv.org/abs/2401.02415",
+      "id": "arxiv:2401.02415",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/LLaMA-Pro",
+        "weights": null
+      },
+      "summary": {
+        "problem": "领域继续预训练容易覆盖语言模型原有通用能力。",
+        "method": "插入恒等初始化的 Transformer 块，仅以领域语料训练新增模块。",
+        "value": "在注入代码和数学能力时缓解遗忘。",
+        "limitation": "增加参数与推理深度，不能替代可检索和更新的外部记忆。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2401.02415",
+        "https://arxiv.org/pdf/2401.02415",
+        "https://github.com/TencentARC/LLaMA-Pro"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "AFL-Net: Integrating Audio, Facial, and Lip Modalities with a Two-step Cross-attention for Robust Speaker Diarization in the Wild",
+      "short_name": "AFL-Net",
+      "published": "2023-12-10",
+      "category": "语音与音频",
+      "tags": [
+        "Avatar",
+        "说话人分离",
+        "音视频理解"
+      ],
+      "venue": "INTERSPEECH 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "多说话人归属与模态缺失处理可用于交互 Avatar 感知。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2312.05730",
+      "paper_url": "https://arxiv.org/abs/2312.05730",
+      "id": "arxiv:2312.05730",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "真实视频中画外音、噪声与遮挡使说话人分段归属困难。",
+        "method": "融合声音、面部和唇动，通过两步交叉注意力及视觉随机遮蔽训练。",
+        "value": "利用互补模态提高身份区分并适应缺失视觉输入。",
+        "limitation": "是说话人日志任务，未直接实现轮次决策或生成端同步。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2312.05730",
+        "https://arxiv.org/pdf/2312.05730"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "DynVideo-E: Harnessing Dynamic NeRF for Large-Scale Motion- and View-Change Human-Centric Video Editing",
+      "short_name": "DynVideo-E",
+      "published": "2023-10-16",
+      "category": "视频生成基础",
+      "tags": [
+        "Avatar",
+        "动态三维",
+        "视频编辑"
+      ],
+      "venue": "CVPR 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "显式动态三维表示如何维持人体视频一致性，适合 Avatar 背景阅读。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2310.10624",
+      "paper_url": "https://arxiv.org/abs/2310.10624",
+      "id": "arxiv:2310.10624",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "大动作和大视角变化使逐帧及二维图集编辑难维持长期一致。",
+        "method": "在动态辐射场中编辑主体与背景，用多视角多姿态蒸馏约束传播。",
+        "value": "将编辑沿形变场传到整个视频并支持新视角。",
+        "limitation": "依赖逐场景训练及人体姿态结构，距离实时通用交互仍有成本差距。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2310.10624",
+        "https://arxiv.org/pdf/2310.10624"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "PhotoMaker: Customizing Realistic Human Photos via Stacked ID Embedding",
+      "short_name": "PhotoMaker",
+      "published": "2023-12-07",
+      "category": "图像生成与编辑",
+      "tags": [
+        "Avatar",
+        "个性化生成",
+        "主体一致性"
+      ],
+      "venue": "CVPR 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "Avatar 身份保持和参考条件设计的基础方法。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2312.04461",
+      "paper_url": "https://arxiv.org/abs/2312.04461",
+      "id": "arxiv:2312.04461",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "快速个性化生成难同时保留身份、变化姿态并遵循文字。",
+        "method": "堆叠多张参考身份嵌入替换类别词，并构造跨视角身份训练数据。",
+        "value": "无需逐身份微调即可生成多样人物图像。",
+        "limitation": "静态身份保持不保证长视频中表情、动作与身份的稳定解耦。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2312.04461",
+        "https://arxiv.org/pdf/2312.04461"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "DiffEditor: Boosting Accuracy and Flexibility on Diffusion-based Image Editing",
+      "short_name": "DiffEditor",
+      "published": "2024-02-04",
+      "category": "图像生成与编辑",
+      "tags": [
+        "交互控制",
+        "图像编辑",
+        "扩散采样"
+      ],
+      "venue": "CVPR 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "局部随机性与保真度权衡可启发交互生成控制。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2402.02583",
+      "paper_url": "https://arxiv.org/abs/2402.02583",
+      "id": "arxiv:2402.02583",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "确定性编辑难生成源图中不存在的细节，复杂操作又容易产生伪影。",
+        "method": "结合图像提示、局部随机采样、区域分数引导和回溯式采样。",
+        "value": "兼顾内容保持与移动、拖拽和跨图粘贴的灵活性。",
+        "limitation": "主要是单图编辑，扩展到视频还需显式处理跨帧一致性。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2402.02583",
+        "https://arxiv.org/pdf/2402.02583"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "DreamAvatar: Text-and-Shape Guided 3D Human Avatar Generation via Diffusion Models",
+      "short_name": "DreamAvatar",
+      "published": "2023-04-03",
+      "category": "交互 Avatar",
+      "tags": [
+        "3D生成",
+        "Avatar",
+        "姿态控制"
+      ],
+      "venue": "CVPR 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "三维 Avatar 的形状先验和可动画表示值得作为基础阅读。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2304.00916",
+      "paper_url": "https://arxiv.org/abs/2304.00916",
+      "id": "arxiv:2304.00916",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "通用文本三维生成难保证人体关节结构和细致外观。",
+        "method": "用人体形状先验约束标准及姿态双空间，以形变场连接并强化头部监督。",
+        "value": "生成姿态可控且纹理更完整的人体资产。",
+        "limitation": "依赖参数化人体先验与优化过程，不是实时对话驱动的 Avatar 系统。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2304.00916",
+        "https://arxiv.org/pdf/2304.00916"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "CustomNet: Zero-shot Object Customization with Variable-Viewpoints in Text-to-Image Diffusion Models",
+      "short_name": "CustomNet",
+      "published": "2023-10-30",
+      "category": "图像生成与编辑",
+      "tags": [
+        "主体一致性",
+        "图像生成",
+        "视角控制"
+      ],
+      "venue": "ACM MM 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "主体身份与视角解耦可补充 Avatar 外观控制。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2310.19784",
+      "paper_url": "https://arxiv.org/abs/2310.19784",
+      "id": "arxiv:2310.19784",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/CustomNet",
+        "weights": null
+      },
+      "summary": {
+        "problem": "对象定制常保留身份却复制原姿态，或改变姿态后丢失细节。",
+        "method": "引入三维新视角先验，分别控制对象位置、视角及文本或图像背景。",
+        "value": "无需测试时优化即可完成多条件对象定制。",
+        "limitation": "主要生成静态图像，时序稳定性和物理交互尚未纳入。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2310.19784",
+        "https://arxiv.org/pdf/2310.19784",
+        "https://github.com/TencentARC/CustomNet"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "SynopGround: A Large-Scale Dataset for Multi-Paragraph Video Grounding from TV Dramas and Synopses",
+      "short_name": "SynopGround",
+      "published": "2024-08-03",
+      "category": "视频理解与推理",
+      "tags": [
+        "时间定位",
+        "视频理解",
+        "长时记忆"
+      ],
+      "venue": "ACM MM 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "长叙事与多段查询定位，可用于视频记忆检索和事件规划评价。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2408.01669",
+      "paper_url": "https://arxiv.org/abs/2408.01669",
+      "id": "arxiv:2408.01669",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "短查询和短片段评测难覆盖复杂叙事，且容易对应多个相似时刻。",
+        "method": "以电视剧及人工梗概构建多段定位数据，用局部与全局推理联合对齐。",
+        "value": "检验长上下文中抽象情节和具体事件的关联。",
+        "limitation": "影视梗概具有强叙事结构，向在线第一视角任务迁移需验证。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2408.01669",
+        "https://arxiv.org/pdf/2408.01669"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "EA-VTR: Event-Aware Video-Text Retrieval",
+      "short_name": "EA-VTR",
+      "published": "2024-07-10",
+      "category": "视频理解与推理",
+      "tags": [
+        "事件记忆",
+        "检索",
+        "视频理解"
+      ],
+      "venue": "ECCV 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "事件内容与顺序表征适合视频 Agent 记忆检索。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2407.07478",
+      "paper_url": "https://arxiv.org/abs/2407.07478",
+      "id": "arxiv:2407.07478",
+      "links": {
+        "project": null,
+        "code": null,
+        "weights": null
+      },
+      "summary": {
+        "problem": "全局视频对比学习忽略细节事件和事件之间的时间关系。",
+        "method": "补充帧级描述并合成事件转场，同时训练帧级内容与视频级时序对齐。",
+        "value": "保持高效检索并增强多事件理解。",
+        "limitation": "单帧近似短事件和拼接转场存在偏差，不保证真实因果理解。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2407.07478",
+        "https://arxiv.org/pdf/2407.07478"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "BrushNet: A Plug-and-Play Image Inpainting Model with Decomposed Dual-Branch Diffusion",
+      "short_name": "BrushNet",
+      "published": "2024-03-11",
+      "category": "图像生成与编辑",
+      "tags": [
+        "图像补全",
+        "扩散模型",
+        "条件控制"
+      ],
+      "venue": "ECCV 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "视频补全和编辑分支的基础设计，可按实现需要选读。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2403.06976",
+      "paper_url": "https://arxiv.org/abs/2403.06976",
+      "id": "arxiv:2403.06976",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/BrushNet",
+        "weights": null
+      },
+      "summary": {
+        "problem": "将受损图像与噪声早期混合会削弱像素约束并增加学习负担。",
+        "method": "分离纯图像条件分支与生成分支，逐层注入特征并进行模糊边界融合。",
+        "value": "增强区域保留和文本一致性，支持可插拔补全。",
+        "limitation": "原始方法面向静态图像，时间一致性需额外建模。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2403.06976",
+        "https://arxiv.org/pdf/2403.06976",
+        "https://github.com/TencentARC/BrushNet"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "ReVideo: Remake a Video with Motion and Content Control",
+      "short_name": "ReVideo",
+      "published": "2024-05-22",
+      "category": "视频生成基础",
+      "tags": [
+        "条件解耦",
+        "视频编辑",
+        "运动控制"
+      ],
+      "venue": "NeurIPS 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "内容与运动解耦是可控视频和 Avatar 的核心设计问题。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2405.13865",
+      "paper_url": "https://arxiv.org/abs/2405.13865",
+      "id": "arxiv:2405.13865",
+      "links": {
+        "project": null,
+        "code": "https://github.com/MC-E/ReVideo",
+        "weights": null
+      },
+      "summary": {
+        "problem": "局部视频编辑中，密集内容条件会压过稀疏轨迹控制。",
+        "method": "分三阶段解耦训练，以时空自适应融合整合首帧编辑和轨迹条件。",
+        "value": "支持保持内容改运动、保持运动改内容及多区域编辑。",
+        "limitation": "轨迹依赖人工指定，未直接保证物理合理或实时反馈。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2405.13865",
+        "https://arxiv.org/pdf/2405.13865",
+        "https://github.com/MC-E/ReVideo"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "MiraData: A Large-Scale Video Dataset with Long Durations and Structured Captions",
+      "short_name": "MiraData",
+      "published": "2024-07-08",
+      "category": "视频生成基础",
+      "tags": [
+        "数据集",
+        "视频生成",
+        "评测",
+        "长时一致性"
+      ],
+      "venue": "NeurIPS 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "长视频数据与运动评测直接支撑视频生成核心问题研究。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2407.06358",
+      "paper_url": "https://arxiv.org/abs/2407.06358",
+      "id": "arxiv:2407.06358",
+      "links": {
+        "project": null,
+        "code": "https://github.com/mira-space/MiraData",
+        "weights": null
+      },
+      "summary": {
+        "problem": "公开视频常过短、运动弱且描述粗略，限制长视频生成训练。",
+        "method": "筛选语义连续长片段并生成结构化描述，补充三维一致性和轨迹运动指标。",
+        "value": "提供面向长时与强运动生成的数据及评测管线。",
+        "limitation": "自动描述和代理几何指标存在误差，不能等价于物理正确性评测。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2407.06358",
+        "https://arxiv.org/pdf/2407.06358",
+        "https://github.com/mira-space/MiraData"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+      "short_name": "E.T. Bench",
+      "published": "2024-09-26",
+      "category": "视频理解与推理",
+      "tags": [
+        "情景记忆",
+        "时间定位",
+        "视频理解",
+        "评测"
+      ],
+      "venue": "NeurIPS 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "事件定位、情景记忆与开放回答适合视频 Agent 评价。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2409.18111",
+      "paper_url": "https://arxiv.org/abs/2409.18111",
+      "id": "arxiv:2409.18111",
+      "links": {
+        "project": null,
+        "code": "https://github.com/PolyU-ChenLab/ETBench",
+        "weights": null
+      },
+      "summary": {
+        "problem": "粗粒度视频问答难发现事件级定位和时间理解缺陷。",
+        "method": "构建多域多事件任务，并用嵌入匹配预测时间戳及配套指令数据。",
+        "value": "同时诊断指代、定位、密集描述和复杂事件理解。",
+        "limitation": "离线评测不直接覆盖持续输入、记忆淘汰及交互延迟。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2409.18111",
+        "https://arxiv.org/pdf/2409.18111",
+        "https://github.com/PolyU-ChenLab/ETBench"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "GrootVL: Tree Topology is All You Need in State Space Model",
+      "short_name": "GrootVL",
+      "published": "2024-06-04",
+      "category": "多模态架构与综述",
+      "tags": [
+        "状态空间模型",
+        "表示学习",
+        "长依赖"
+      ],
+      "venue": "NeurIPS 2024 [Spotlight]",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P2",
+      "priority_reason": "输入自适应记忆传播拓扑可作模型结构背景。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2406.02395",
+      "paper_url": "https://arxiv.org/abs/2406.02395",
+      "id": "arxiv:2406.02395",
+      "links": {
+        "project": null,
+        "code": "https://github.com/EasonXiao-888/GrootVL",
+        "weights": null
+      },
+      "summary": {
+        "problem": "固定序列扫描破坏图像邻接关系，也限制长距离特征传播。",
+        "method": "根据特征构造树拓扑，并用动态规划在线性复杂度内聚合树上信息。",
+        "value": "兼顾较长依赖与计算效率，扩展到视觉和语言任务。",
+        "limitation": "结构实验不直接证明长期情景记忆或在线规划收益。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2406.02395",
+        "https://arxiv.org/pdf/2406.02395",
+        "https://github.com/EasonXiao-888/GrootVL"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    },
+    {
+      "title": "ST-LLM: Large Language Models Are Effective Temporal Learners",
+      "short_name": "ST-LLM",
+      "published": "2024-03-30",
+      "category": "视频理解与推理",
+      "tags": [
+        "上下文压缩",
+        "时间建模",
+        "视频理解"
+      ],
+      "venue": "ECCV 2024",
+      "venue_url": "https://arc.tencent.com/academic",
+      "priority": "P1",
+      "priority_reason": "直接时空序列建模是视频 Agent 感知的重要基础对照。",
+      "reading_status": "abs-intro",
+      "doi": null,
+      "arxiv_id": "2404.00308",
+      "paper_url": "https://arxiv.org/abs/2404.00308",
+      "id": "arxiv:2404.00308",
+      "links": {
+        "project": null,
+        "code": "https://github.com/TencentARC/ST-LLM",
+        "weights": null
+      },
+      "summary": {
+        "problem": "时间平均池化抹掉运动顺序，额外视频模块又增加训练成本。",
+        "method": "将时空标记直接交给语言模型，以动态掩码和全局局部输入控制开销。",
+        "value": "利用语言模型序列能力改善运动相关理解。",
+        "limitation": "长视频仍依赖压缩采样，未提供持续可更新的外部记忆。"
+      },
+      "evidence_urls": [
+        "https://arc.tencent.com/academic",
+        "https://arxiv.org/abs/2404.00308",
+        "https://arxiv.org/pdf/2404.00308",
+        "https://github.com/TencentARC/ST-LLM"
+      ],
+      "verified_at": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "discovery_sources": [
+        "arc-academic"
+      ]
+    }
+  ]
+}

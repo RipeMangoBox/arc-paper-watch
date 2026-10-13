@@ -1,0 +1,6 @@
+{
+  "title": "ARC Paper Watch",
+  "repository": "RipeMangoBox/arc-paper-watch",
+  "url": "https://ripemangobox.github.io/arc-paper-watch/",
+  "scope": "收录腾讯 ARC 官方 academic 列表中录用年份为 2024 年及以后的全部 80 篇（2024：33，2025：21，2026：26）；首次公开日期可能早于 2024。已读摘要与引言 78 篇；ViewWeaver、Chinese Title Generation 两篇因引言未取得，仅保留待补占位与暂定优先级。研究目标：视频生成核心难题、实时交互 Avatar、世界模型、Agent 规划与记忆。"
+}
